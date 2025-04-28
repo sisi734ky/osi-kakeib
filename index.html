@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>推し活家計簿</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>推し活家計簿</h1>
+    <div>
+      <h2>貯金目標</h2>
+      <input type="number" id="goalAmount" placeholder="目標金額" />
+      <input type="text" id="goalPurpose" placeholder="目標" />
+      <button id="setGoal">設定</button>
+    </div>
+    <div>
+      <h2>貯金</h2>
+      <input type="date" id="depositDate" />
+      <input type="number" id="depositAmount" placeholder="金額" />
+      <button id="addDeposit">追加</button>
+    </div>
+    <div>
+      <h2>購入履歴</h2>
+      <input type="date" id="purchaseDate" />
+      <input type="text" id="purchaseItem" placeholder="アイテム名" />
+      <input type="number" id="purchaseAmount" placeholder="金額" />
+      <button id="addPurchase">追加</button>
+    </div>
+    <div>
+      <h2>貯金残高</h2>
+      <p id="balance">0円</p>
+      <p>目標まであと: <span id="remaining"></span></p>
+      <p>目標: <span id="purpose"></span></p>
+    </div>
+    <div>
+      <h2>履歴</h2>
+      <ul id="history"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
